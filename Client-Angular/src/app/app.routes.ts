@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { CategoriesPage } from './pages/categories/categories.page';
 import { DatePage } from './pages/date/date.page';
 import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
@@ -17,6 +18,7 @@ import { UsersPage } from './pages/users/users.page';
  *
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
+ * @see {@link CategoriesPage}
  */
 export const routes: Routes = [
 
@@ -37,6 +39,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de productos.
    */
   { path: 'products', component: ProductsPage },
+
+  /**
+   * Ruta de categorías.
+   *
+   * @remarks
+   * Renderiza el componente `CategoriesPage`, encargado
+   * de mostrar y gestionar el listado de categorías.
+   */
+  { path: 'categories', component: CategoriesPage },
 
   /**
    * Ruta de la fecha.
