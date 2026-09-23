@@ -1,0 +1,29 @@
+---
+import { CUSTOMERS } from "@data/Customers";
+import type { Customer } from "@interfaces/Customers";
+import MainLayout from "@layouts/MainLayout.astro";
+
+const customers: Customer[] = CUSTOMERS;
+---
+<MainLayout>
+  <table class="table table-striped border">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Teléfono</th>
+      </tr>
+    </thead>
+    <tbody>
+      {customers.map((customer) => (
+        <tr>
+          <th scope="row">{customer.id}</th>
+          <td>{customer.name}</td>
+          <td>{customer.email}</td>
+          <td>{customer.phone}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</MainLayout>
