@@ -1,5 +1,9 @@
 import { Category } from "../interfaces/categories.interface";
 
+/**
+ * Listado de categorías de ejemplo usado en las pruebas unitarias.
+ * Contiene datos de categorías con id, name y description.
+ */
 export const CATEGORIES_MOCK: Category[] = [
     {
         id: 1,

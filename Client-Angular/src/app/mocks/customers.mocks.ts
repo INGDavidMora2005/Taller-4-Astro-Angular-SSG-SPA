@@ -1,5 +1,9 @@
 import { Customer } from "../interfaces/customers.interface";
 
+/**
+ * Listado de clientes de ejemplo usado en las pruebas unitarias.
+ * Contiene datos de clientes con id, name, email y phone.
+ */
 export const CUSTOMERS_MOCK: Customer[] = [
     {
         id: 1,
