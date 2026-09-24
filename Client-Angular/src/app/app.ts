@@ -61,6 +61,7 @@ export class App {
       { text: 'Usuarios', url: '/users' },
       { text: 'Productos', url: '/products' },
       { text: 'Categorías', url: '/categories' },
+      { text: 'Clientes', url: '/customers' },
       { text: 'Fecha', url: '/date' },
     ]
   };

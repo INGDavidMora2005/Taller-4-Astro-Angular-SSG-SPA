@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { CategoriesPage } from './pages/categories/categories.page';
+import { CustomersPage } from './pages/customers/customers.page';
 import { DatePage } from './pages/date/date.page';
 import { ProductsPage } from './pages/products/products.page';
 import { UsersPage } from './pages/users/users.page';
@@ -16,6 +17,7 @@ import { UsersPage } from './pages/users/users.page';
  * - Rutas de navegación principales
  * - Redirección por defecto para rutas no existentes
  *
+ * @see {@link CustomersPage}
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
  * @see {@link CategoriesPage}
@@ -48,6 +50,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de categorías.
    */
   { path: 'categories', component: CategoriesPage },
+
+  /**
+   * Ruta de clientes.
+   *
+   * @remarks
+   * Renderiza el componente `CustomersPage`, encargado
+   * de mostrar y gestionar el listado de clientes.
+   */
+  { path: 'customers', component: CustomersPage },
 
   /**
    * Ruta de la fecha.
