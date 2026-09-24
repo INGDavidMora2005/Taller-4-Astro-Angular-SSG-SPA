@@ -23,7 +23,7 @@ import { CUSTOMERS } from '../../data/customers.interface';
 })
 export class CustomersService {
   /**
-   * Obtiene una lista de clientes desde el backend.
+   * Obtiene una lista de clientes desde la data local.
    *
    * @returns Observable que emite un array de clientes.
    *
