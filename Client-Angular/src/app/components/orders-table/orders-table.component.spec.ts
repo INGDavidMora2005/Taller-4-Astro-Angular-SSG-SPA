@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ORDERS_MOCK } from '../../mocks/orders.mocks';
@@ -48,6 +49,8 @@ describe('OrdersTableComponent', () => {
       expect(columns[0].nativeElement.textContent.trim()).toBe(String(order.id));
       expect(columns[1].nativeElement.textContent.trim()).toBe(order.product);
       expect(columns[2].nativeElement.textContent.trim()).toBe(String(order.quantity));
+      const currencyPipe = new CurrencyPipe('en-US');
+      expect(columns[3].nativeElement.textContent.trim()).toBe(currencyPipe.transform(order.total));
       expect(columns[4].nativeElement.textContent.trim()).toBe(order.status);
     });
   });
